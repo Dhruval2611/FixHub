@@ -1,0 +1,246 @@
+.vendor-jobs {
+  padding: 32px;
+  max-width: 900px;
+}
+
+.vj-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 16px;
+}
+
+.vj-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #E5E7EB;
+  border-top-color: #111827;
+  border-radius: 50%;
+  animation: vj-spin 0.7s linear infinite;
+}
+
+@keyframes vj-spin {
+  to { transform: rotate(360deg); }
+}
+
+.vj-loading p { color: #6B7280; font-size: 0.9rem; }
+
+.vj-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.vj-header h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.vj-header p { color: #6B7280; font-size: 0.9rem; margin: 0; }
+
+.vj-count {
+  background: #F3F4F6;
+  color: #374151;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.vj-empty {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+}
+
+.vj-empty-icon {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: #9CA3AF;
+}
+.vj-empty h3 { font-size: 1.15rem; color: #111827; margin-bottom: 8px; }
+.vj-empty p { color: #6B7280; font-size: 0.9rem; margin: 0; }
+
+.vj-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vj-card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 14px;
+  transition: all 0.2s;
+}
+
+.vj-card:hover {
+  border-color: #D1D5DB;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.vj-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.vj-service-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vj-service-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2D2424, #5C4B4B);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F5E871;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.vj-service-info h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.vj-service-cat {
+  font-size: 0.78rem;
+  color: #9CA3AF;
+}
+
+.vj-status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.vj-badge-blue { background: #EFF6FF; color: #1D4ED8; }
+.vj-badge-yellow { background: #FFFBEB; color: #B45309; }
+.vj-badge-green { background: #F0FDF4; color: #15803D; }
+.vj-badge-gray { background: #F3F4F6; color: #6B7280; }
+
+.vj-card-details {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vj-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #374151;
+}
+
+.vj-icon { color: #9CA3AF; font-size: 1rem; flex-shrink: 0; }
+
+.vj-detail-row {
+  display: flex;
+  gap: 24px;
+}
+
+.vj-notes {
+  padding: 0 20px 12px;
+  font-size: 0.85rem;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+.vj-notes strong {
+  color: #374151;
+}
+
+.vj-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #FAFAFA;
+  border-top: 1px solid #F3F4F6;
+  border-radius: 0 0 14px 14px;
+}
+
+.vj-price {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #2D2424;
+}
+
+.vj-date-label {
+  font-size: 0.78rem;
+  color: #9CA3AF;
+}
+
+/* Complete Button */
+.vj-complete-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vj-complete-btn:hover:not(:disabled) {
+  background: #1F2937;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.vj-complete-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.vj-btn-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: vj-spin 0.7s linear infinite;
+}
+
+.vj-waiting-label {
+  font-size: 0.78rem;
+  color: #B45309;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .vendor-jobs { padding: 20px 16px 100px; }
+  .vj-header h1 { font-size: 1.25rem; }
+  .vj-detail-row { flex-direction: column; gap: 10px; }
+  .vj-card-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
+  .vj-complete-btn { width: 100%; justify-content: center; }
+}

@@ -1,0 +1,518 @@
+/* ============================================================
+   VendorSelection.css — Dedicated vendor selection page
+   ============================================================ */
+
+.vs-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+  min-height: 100vh;
+}
+
+/* Header */
+.vs-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  gap: 16px;
+}
+.vs-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px;
+}
+.vs-header p {
+  color: #64748b;
+  font-size: 0.92rem;
+  margin: 0;
+}
+.vs-count-badge {
+  background: #0f172a;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Empty state */
+.vs-empty {
+  text-align: center;
+  padding: 56px 20px;
+}
+.vs-empty-icon {
+  font-size: 3rem;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+  display: block;
+}
+.vs-empty h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #334155;
+  margin: 0 0 6px;
+}
+.vs-empty p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin: 0 0 24px;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+.vs-browse-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.vs-browse-btn:hover { background: #1e293b; }
+
+/* Booking card list */
+.vs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vs-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.vs-card:hover { border-color: #cbd5e1; }
+.vs-card--open {
+  border-color: #94a3b8;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+/* Summary row */
+.vs-card-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+.vs-card-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+.vs-svc-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.vs-svc-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.vs-svc-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0f172a;
+}
+.vs-svc-details {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+.vs-svc-details svg { font-size: 0.72rem; }
+.vs-dot { margin: 0 2px; }
+
+.vs-card-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.vs-vendor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.vs-chevron {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  transition: transform 0.25s ease;
+}
+.vs-chevron--open { transform: rotate(180deg); }
+
+.vs-remove-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 0.78rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+}
+.vs-remove-btn:hover {
+  background: #fee2e2;
+  border-color: #f87171;
+}
+
+.vs-modal-danger {
+  background: #dc2626 !important;
+}
+.vs-modal-danger:hover:not(:disabled) {
+  background: #b91c1c !important;
+}
+
+/* Expandable panel */
+.vs-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.vs-panel--open {
+  max-height: 2000px;
+}
+.vs-panel-inner {
+  padding: 0 20px 20px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* Address strip */
+.vs-address-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #64748b;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+  margin-bottom: 16px;
+}
+.vs-address-strip svg { color: #94a3b8; font-size: 0.82rem; }
+
+.vs-no-vendors {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Vendor cards inside panel */
+.vs-vendor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vs-vendor-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px;
+  transition: border-color 0.15s;
+}
+.vs-vendor-card:hover { border-color: #cbd5e1; }
+
+.vs-vendor-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.vs-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.vs-vendor-info { flex: 1; min-width: 0; }
+.vs-vendor-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0f172a;
+  margin: 0 0 1px;
+}
+.vs-vendor-business {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.vs-vendor-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+.vs-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #059669;
+  background: #ecfdf5;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.vs-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #d97706;
+}
+.vs-rating svg { font-size: 0.75rem; }
+.vs-review-ct {
+  font-weight: 400;
+  color: #94a3b8;
+  font-size: 0.72rem;
+}
+
+.vs-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: #475569;
+}
+.vs-phone svg { color: #94a3b8; font-size: 0.72rem; }
+
+.vs-certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+.vs-cert-pill {
+  background: #e2e8f0;
+  color: #475569;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.vs-vendor-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 10px;
+  margin-top: 4px;
+}
+.vs-time-ago {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.vs-select-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #0f172a;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.vs-select-btn:hover:not(:disabled) {
+  background: #1e293b;
+  box-shadow: 0 2px 8px rgba(15,23,42,0.18);
+}
+.vs-select-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Modal */
+.vs-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: vsFadeIn 0.2s ease;
+}
+@keyframes vsFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.vs-modal {
+  background: #fff;
+  border-radius: 14px;
+  max-width: 420px;
+  width: 100%;
+  padding: 28px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  animation: vsSlideUp 0.25s ease;
+}
+@keyframes vsSlideUp {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.vs-modal h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 10px;
+}
+.vs-modal p {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+.vs-modal-note {
+  font-size: 0.82rem !important;
+  color: #94a3b8 !important;
+  font-style: italic;
+  margin-bottom: 20px !important;
+}
+.vs-modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.vs-modal-cancel {
+  padding: 9px 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.vs-modal-cancel:hover { background: #f8fafc; }
+
+.vs-modal-confirm {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #059669;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s;
+}
+.vs-modal-confirm:hover:not(:disabled) { background: #047857; }
+.vs-modal-confirm:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Spinner */
+.vs-btn-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: vsSpin 0.6s linear infinite;
+  display: inline-block;
+}
+@keyframes vsSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* Loading */
+.vs-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  gap: 14px;
+  color: #64748b;
+}
+.vs-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #0f172a;
+  border-radius: 50%;
+  animation: vsSpin 0.6s linear infinite;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .vs-page { padding: 20px 16px 40px; }
+  .vs-header { flex-direction: column; gap: 8px; }
+  .vs-header h1 { font-size: 1.3rem; }
+  .vs-card-summary { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .vs-card-right { width: 100%; justify-content: space-between; }
+  .vs-vendor-footer { flex-direction: column; gap: 8px; align-items: flex-start; }
+  .vs-select-btn { width: 100%; justify-content: center; }
+}

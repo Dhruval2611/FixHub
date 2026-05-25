@@ -1,0 +1,33 @@
+
+.circular-text {
+    position: relative;
+    width: 540px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90vw;
+    max-height: 90vw;
+}
+
+@media (max-width: 600px) {
+    .circular-text {
+        width: 90vw;
+        height: 90vw;
+        min-width: 220px;
+        min-height: 220px;
+    }
+}
+
+.circular-text span {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform-origin: 0 270px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1C1917;
+}

@@ -1,0 +1,480 @@
+.vendor-auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e8e5e0 100%);
+  padding: 40px 24px;
+}
+
+.vendor-auth-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 48px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 24px rgba(45, 36, 36, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.vendor-auth-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.vendor-auth-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #2D2424;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #2D2424;
+  letter-spacing: -0.02em;
+}
+
+.logo-badge {
+  background: linear-gradient(135deg, #2D2424, #5C4B4B);
+  color: #F5E871;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.vendor-auth-header h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.vendor-auth-header p {
+  color: #6B7280;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.vendor-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.v-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.v-form-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.v-form-group .label-icon {
+  color: #6B7280;
+  font-size: 1rem;
+}
+
+.v-input-wrapper {
+  position: relative;
+}
+
+.v-input-wrapper input,
+.v-input-wrapper select,
+.v-input-wrapper textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #fff;
+  color: #111827;
+  transition: all 0.2s ease;
+}
+
+.v-input-wrapper input:focus,
+.v-input-wrapper select:focus,
+.v-input-wrapper textarea:focus {
+  outline: none;
+  border-color: #2D2424;
+  box-shadow: 0 0 0 3px rgba(45, 36, 36, 0.08);
+}
+
+.v-input-wrapper input::placeholder,
+.v-input-wrapper textarea::placeholder {
+  color: #9CA3AF;
+}
+
+.v-password-wrapper input {
+  padding-right: 44px;
+}
+
+.v-password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #9CA3AF;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 1.1rem;
+  display: flex;
+  transition: color 0.2s;
+}
+
+.v-password-toggle:hover {
+  color: #374151;
+}
+
+.v-submit-btn {
+  width: 100%;
+  padding: 13px 24px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+
+.v-submit-btn:hover:not(:disabled) {
+  background: #1F2937;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.v-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.v-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: v-spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes v-spin {
+  to { transform: rotate(360deg); }
+}
+
+.vendor-auth-footer {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 0.9rem;
+  color: #6B7280;
+}
+
+.vendor-auth-footer a {
+  color: #111827;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.vendor-auth-footer a:hover {
+  color: #5C4B4B;
+  text-decoration: underline;
+}
+
+/* Form row for side-by-side fields */
+.v-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* File upload styles */
+.v-file-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.v-file-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 2px dashed #D1D5DB;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #fafafa;
+}
+
+.v-file-label:hover {
+  border-color: #2D2424;
+  background: #f3f4f6;
+}
+
+.v-file-label.has-file {
+  border-color: #9DB397;
+  background: #f0fdf4;
+}
+
+.v-file-icon {
+  font-size: 1.2rem;
+  color: #6B7280;
+}
+
+.v-file-text {
+  font-size: 0.85rem;
+  color: #6B7280;
+}
+
+.v-file-text .file-name {
+  color: #111827;
+  font-weight: 500;
+}
+
+.v-file-hint {
+  font-size: 0.78rem;
+  color: #9CA3AF;
+}
+
+/* Steps indicator */
+.v-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.v-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.v-step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #E5E7EB;
+  color: #6B7280;
+  transition: all 0.3s;
+}
+
+.v-step.active .v-step-number {
+  background: #111827;
+  color: #fff;
+}
+
+.v-step.completed .v-step-number {
+  background: #9DB397;
+  color: #fff;
+}
+
+.v-step-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #9CA3AF;
+}
+
+.v-step.active .v-step-label {
+  color: #111827;
+  font-weight: 600;
+}
+
+.v-step.completed .v-step-label {
+  color: #9DB397;
+}
+
+.v-step-line {
+  width: 40px;
+  height: 2px;
+  background: #E5E7EB;
+  border-radius: 2px;
+}
+
+.v-step-line.completed {
+  background: #9DB397;
+}
+
+/* Navigation buttons */
+.v-form-nav {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.v-back-btn {
+  flex: 1;
+  padding: 12px;
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.v-back-btn:hover {
+  background: #e5e7eb;
+}
+
+.v-next-btn {
+  flex: 2;
+  padding: 12px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.v-next-btn:hover {
+  background: #1F2937;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .vendor-auth-container {
+    padding: 20px 16px;
+  }
+
+  .vendor-auth-card {
+    padding: 32px 24px;
+  }
+
+  .vendor-auth-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .v-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .vendor-auth-card {
+    padding: 24px 18px;
+  }
+
+  .vendor-auth-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .v-steps {
+    gap: 6px;
+  }
+
+  .v-step-label {
+    display: none;
+  }
+
+  .v-step-line {
+    width: 24px;
+  }
+}
+
+/* Validation error styles */
+.v-input-error input,
+.v-input-error select,
+.v-input-error textarea {
+  border-color: #EF4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.08) !important;
+}
+
+.v-field-error {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #EF4444;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.v-field-error svg {
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+/* Password strength indicator */
+.v-password-strength {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.v-strength-bar {
+  flex: 1;
+  height: 4px;
+  background: #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.v-strength-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.strength-weak .v-strength-fill { background: #EF4444; }
+.strength-medium .v-strength-fill { background: #F59E0B; }
+.strength-strong .v-strength-fill { background: #22C55E; }
+
+.v-strength-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  min-width: 48px;
+}
+
+.v-strength-label.strength-weak { color: #EF4444; }
+.v-strength-label.strength-medium { color: #F59E0B; }
+.v-strength-label.strength-strong { color: #22C55E; }
+

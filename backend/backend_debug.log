@@ -1,0 +1,931 @@
+2026-03-12T11:31:39.995Z: getAllServices called
+DATA: {}
+--------------------------------------------------
+2026-03-12T11:37:18.523Z: getAllServices called
+DATA: {}
+--------------------------------------------------
+2026-03-12T11:42:24.742Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:42:24.745Z: optionalAuth decoding error
+DATA: {
+  "message": "invalid signature"
+}
+--------------------------------------------------
+2026-03-12T11:42:24.755Z: getAllServices called
+DATA: {}
+--------------------------------------------------
+2026-03-12T11:44:14.590Z: optionalAuth.js file loaded
+--------------------------------------------------
+2026-03-12T11:44:52.115Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:44:52.118Z: optionalAuth decoding error
+DATA: {
+  "message": "invalid signature"
+}
+--------------------------------------------------
+2026-03-12T11:44:52.131Z: getAllServices called
+DATA: {}
+--------------------------------------------------
+2026-03-12T11:52:42.758Z: optionalAuth.js file loaded
+--------------------------------------------------
+2026-03-12T11:52:49.904Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": false
+}
+--------------------------------------------------
+2026-03-12T11:52:49.920Z: getAllServices called
+DATA: {}
+--------------------------------------------------
+2026-03-12T11:52:49.946Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": false
+}
+--------------------------------------------------
+2026-03-12T11:52:49.964Z: getAllServices called
+DATA: {}
+--------------------------------------------------
+2026-03-12T11:53:30.545Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:53:30.547Z: optionalAuth decoding success
+DATA: {
+  "userId": "69b2880bff79b08cf45888c4"
+}
+--------------------------------------------------
+2026-03-12T11:53:30.551Z: getAllServices called
+DATA: {
+  "user": {
+    "id": "69b2880bff79b08cf45888c4",
+    "iat": 1773316370,
+    "exp": 1773921170
+  }
+}
+--------------------------------------------------
+2026-03-12T11:53:30.554Z: User found for services
+DATA: {
+  "id": "69b2880bff79b08cf45888c4",
+  "subscription": {
+    "planName": "Elite",
+    "planStatus": "active",
+    "planStartDate": "2026-03-12T11:53:25.902Z",
+    "planExpiryDate": "2026-07-11T11:03:34.075Z",
+    "planPrice": 999
+  }
+}
+--------------------------------------------------
+2026-03-12T11:53:30.555Z: Subscription check
+DATA: {
+  "isStatusActive": true,
+  "isNotExpired": true,
+  "expiry": "2026-07-11T11:03:34.075Z",
+  "now": "2026-03-12T11:53:30.555Z"
+}
+--------------------------------------------------
+2026-03-12T11:53:30.555Z: Discount applied
+DATA: {
+  "planName": "Elite",
+  "discountPercentage": 25
+}
+--------------------------------------------------
+2026-03-12T11:53:30.557Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:53:30.559Z: optionalAuth decoding success
+DATA: {
+  "userId": "69b2880bff79b08cf45888c4"
+}
+--------------------------------------------------
+2026-03-12T11:53:30.562Z: getAllServices called
+DATA: {
+  "user": {
+    "id": "69b2880bff79b08cf45888c4",
+    "iat": 1773316370,
+    "exp": 1773921170
+  }
+}
+--------------------------------------------------
+2026-03-12T11:53:30.566Z: User found for services
+DATA: {
+  "id": "69b2880bff79b08cf45888c4",
+  "subscription": {
+    "planName": "Elite",
+    "planStatus": "active",
+    "planStartDate": "2026-03-12T11:53:25.902Z",
+    "planExpiryDate": "2026-07-11T11:03:34.075Z",
+    "planPrice": 999
+  }
+}
+--------------------------------------------------
+2026-03-12T11:53:30.567Z: Subscription check
+DATA: {
+  "isStatusActive": true,
+  "isNotExpired": true,
+  "expiry": "2026-07-11T11:03:34.075Z",
+  "now": "2026-03-12T11:53:30.567Z"
+}
+--------------------------------------------------
+2026-03-12T11:53:30.567Z: Discount applied
+DATA: {
+  "planName": "Elite",
+  "discountPercentage": 25
+}
+--------------------------------------------------
+2026-03-12T11:54:35.435Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:54:35.436Z: optionalAuth decoding success
+DATA: {
+  "userId": "69b2880bff79b08cf45888c4"
+}
+--------------------------------------------------
+2026-03-12T11:54:35.440Z: getAllServices called
+DATA: {
+  "user": {
+    "id": "69b2880bff79b08cf45888c4",
+    "iat": 1773316370,
+    "exp": 1773921170
+  }
+}
+--------------------------------------------------
+2026-03-12T11:54:35.443Z: User found for services
+DATA: {
+  "id": "69b2880bff79b08cf45888c4",
+  "subscription": {
+    "planName": "Premium",
+    "planStatus": "active",
+    "planStartDate": "2026-03-12T11:54:19.716Z",
+    "planExpiryDate": "2026-08-10T11:03:34.075Z",
+    "planPrice": 499
+  }
+}
+--------------------------------------------------
+2026-03-12T11:54:35.444Z: Subscription check
+DATA: {
+  "isStatusActive": true,
+  "isNotExpired": true,
+  "expiry": "2026-08-10T11:03:34.075Z",
+  "now": "2026-03-12T11:54:35.443Z"
+}
+--------------------------------------------------
+2026-03-12T11:54:35.444Z: Discount applied
+DATA: {
+  "planName": "Premium",
+  "discountPercentage": 15
+}
+--------------------------------------------------
+2026-03-12T11:54:35.446Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:54:35.447Z: optionalAuth decoding success
+DATA: {
+  "userId": "69b2880bff79b08cf45888c4"
+}
+--------------------------------------------------
+2026-03-12T11:54:35.450Z: getAllServices called
+DATA: {
+  "user": {
+    "id": "69b2880bff79b08cf45888c4",
+    "iat": 1773316370,
+    "exp": 1773921170
+  }
+}
+--------------------------------------------------
+2026-03-12T11:54:35.452Z: User found for services
+DATA: {
+  "id": "69b2880bff79b08cf45888c4",
+  "subscription": {
+    "planName": "Premium",
+    "planStatus": "active",
+    "planStartDate": "2026-03-12T11:54:19.716Z",
+    "planExpiryDate": "2026-08-10T11:03:34.075Z",
+    "planPrice": 499
+  }
+}
+--------------------------------------------------
+2026-03-12T11:54:35.453Z: Subscription check
+DATA: {
+  "isStatusActive": true,
+  "isNotExpired": true,
+  "expiry": "2026-08-10T11:03:34.075Z",
+  "now": "2026-03-12T11:54:35.453Z"
+}
+--------------------------------------------------
+2026-03-12T11:54:35.453Z: Discount applied
+DATA: {
+  "planName": "Premium",
+  "discountPercentage": 15
+}
+--------------------------------------------------
+2026-03-12T11:55:01.633Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:55:01.634Z: optionalAuth decoding error
+DATA: {
+  "message": "invalid signature"
+}
+--------------------------------------------------
+2026-03-12T11:55:01.636Z: getAllServices called
+DATA: {}
+--------------------------------------------------
+2026-03-12T11:59:12.954Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:59:12.955Z: optionalAuth decoding success
+DATA: {
+  "userId": "69b2880bff79b08cf45888c4"
+}
+--------------------------------------------------
+2026-03-12T11:59:12.958Z: getAllServices called
+DATA: {
+  "user": {
+    "id": "69b2880bff79b08cf45888c4",
+    "iat": 1773316370,
+    "exp": 1773921170
+  }
+}
+--------------------------------------------------
+2026-03-12T11:59:12.966Z: User found for services
+DATA: {
+  "id": "69b2880bff79b08cf45888c4",
+  "subscription": {
+    "planName": "Premium",
+    "planStatus": "active",
+    "planStartDate": "2026-03-12T11:54:19.716Z",
+    "planExpiryDate": "2026-08-10T11:03:34.075Z",
+    "planPrice": 499
+  }
+}
+--------------------------------------------------
+2026-03-12T11:59:12.966Z: Subscription check
+DATA: {
+  "isStatusActive": true,
+  "isNotExpired": true,
+  "expiry": "2026-08-10T11:03:34.075Z",
+  "now": "2026-03-12T11:59:12.966Z"
+}
+--------------------------------------------------
+2026-03-12T11:59:12.967Z: Discount applied
+DATA: {
+  "planName": "Premium",
+  "discountPercentage": 15
+}
+--------------------------------------------------
+2026-03-12T11:59:12.972Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T11:59:12.974Z: optionalAuth decoding success
+DATA: {
+  "userId": "69b2880bff79b08cf45888c4"
+}
+--------------------------------------------------
+2026-03-12T11:59:12.978Z: getAllServices called
+DATA: {
+  "user": {
+    "id": "69b2880bff79b08cf45888c4",
+    "iat": 1773316370,
+    "exp": 1773921170
+  }
+}
+--------------------------------------------------
+2026-03-12T11:59:12.987Z: User found for services
+DATA: {
+  "id": "69b2880bff79b08cf45888c4",
+  "subscription": {
+    "planName": "Premium",
+    "planStatus": "active",
+    "planStartDate": "2026-03-12T11:54:19.716Z",
+    "planExpiryDate": "2026-08-10T11:03:34.075Z",
+    "planPrice": 499
+  }
+}
+--------------------------------------------------
+2026-03-12T11:59:12.987Z: Subscription check
+DATA: {
+  "isStatusActive": true,
+  "isNotExpired": true,
+  "expiry": "2026-08-10T11:03:34.075Z",
+  "now": "2026-03-12T11:59:12.987Z"
+}
+--------------------------------------------------
+2026-03-12T11:59:12.987Z: Discount applied
+DATA: {
+  "planName": "Premium",
+  "discountPercentage": 15
+}
+--------------------------------------------------
+2026-03-12T12:25:43.054Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T12:25:43.056Z: optionalAuth decoding success
+DATA: {
+  "userId": "69b2880bff79b08cf45888c4"
+}
+--------------------------------------------------
+2026-03-12T12:25:43.063Z: getAllServices called
+DATA: {
+  "user": {
+    "id": "69b2880bff79b08cf45888c4",
+    "iat": 1773316753,
+    "exp": 1773921553
+  }
+}
+--------------------------------------------------
+2026-03-12T12:25:43.077Z: User found for services
+DATA: {
+  "id": "69b2880bff79b08cf45888c4",
+  "subscription": {
+    "planName": "Premium",
+    "planStatus": "active",
+    "planStartDate": "2026-03-12T11:54:19.716Z",
+    "planExpiryDate": "2026-08-10T11:03:34.075Z",
+    "planPrice": 499
+  }
+}
+--------------------------------------------------
+2026-03-12T12:25:43.078Z: Subscription check
+DATA: {
+  "isStatusActive": true,
+  "isNotExpired": true,
+  "expiry": "2026-08-10T11:03:34.075Z",
+  "now": "2026-03-12T12:25:43.077Z"
+}
+--------------------------------------------------
+2026-03-12T12:25:43.078Z: Discount applied
+DATA: {
+  "planName": "Premium",
+  "discountPercentage": 15
+}
+--------------------------------------------------
+2026-03-12T12:25:43.085Z: optionalAuth middleware touched
+DATA: {
+  "hasToken": true
+}
+--------------------------------------------------
+2026-03-12T12:25:43.087Z: optionalAuth decoding success
+DATA: {
+  "userId": "69b2880bff79b08cf45888c4"
+}
+--------------------------------------------------
+2026-03-12T12:25:43.094Z: getAllServices called
+DATA: {
+  "user": {
+    "id": "69b2880bff79b08cf45888c4",
+    "iat": 1773316753,
+    "exp": 1773921553
+  }
+}
+--------------------------------------------------
+2026-03-12T12:25:43.099Z: User found for services
+DATA: {
+  "id": "69b2880bff79b08cf45888c4",
+  "subscription": {
+    "planName": "Premium",
+    "planStatus": "active",
+    "planStartDate": "2026-03-12T11:54:19.716Z",
+    "planExpiryDate": "2026-08-10T11:03:34.075Z",
+    "planPrice": 499
+  }
+}
+--------------------------------------------------
+2026-03-12T12:25:43.100Z: Subscription check
+DATA: {
+  "isStatusActive": true,
+  "isNotExpired": true,
+  "expiry": "2026-08-10T11:03:34.075Z",
+  "now": "2026-03-12T12:25:43.100Z"
+}
+--------------------------------------------------
+2026-03-12T12:25:43.100Z: Discount applied
+DATA: {
+  "planName": "Premium",
+  "discountPercentage": 15
+}
+--------------------------------------------------
+2026-03-13T08:26:17.035Z: Attempting to send booking confirmation email to: brucewayne.protocol@gmail.com
+DATA: {
+  "paymentId": "69b3ca27bc4bea2f18935b58",
+  "customerName": "Bruce Wayne",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-03-13T08:26:41.159Z: ✅ Booking confirmation email successfully sent to brucewayne.protocol@gmail.com
+--------------------------------------------------
+2026-03-13T08:29:10.595Z: Admin confirmed booking 69b3ca29bc4bea2f18935b5f. Preparing email to brucewayne.protocol@gmail.com
+--------------------------------------------------
+2026-03-13T08:29:12.411Z: ✅ Confirmed email successfully sent to brucewayne.protocol@gmail.com for booking 69b3ca29bc4bea2f18935b5f
+--------------------------------------------------
+2026-03-13T08:40:05.884Z: Admin confirmed booking 69b3beb713f0c6e945fbfb1c. Preparing email to brucewayne.protocol@gmail.com
+--------------------------------------------------
+2026-03-13T08:40:09.090Z: ✅ Confirmed email successfully sent to brucewayne.protocol@gmail.com for booking 69b3beb713f0c6e945fbfb1c
+--------------------------------------------------
+2026-03-25T06:17:21.273Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Akshit Patel",
+    "phone": "9976643342",
+    "isProfileCompletion": "true"
+  },
+  "file": {
+    "fieldname": "profilePicture",
+    "originalname": "profile.jpg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "uploads/",
+    "filename": "profilePicture-1774419441269-586918790.jpg",
+    "path": "uploads\\profilePicture-1774419441269-586918790.jpg",
+    "size": 111133
+  },
+  "user": {
+    "id": "69c37dcf0d623415297e776f",
+    "iat": 1774419407,
+    "exp": 1775024207
+  }
+}
+--------------------------------------------------
+2026-03-25T06:17:21.275Z: Updating user with data
+DATA: {
+  "name": "Akshit Patel",
+  "phone": "9976643342",
+  "profilePicture": "uploads/profilePicture-1774419441269-586918790.jpg"
+}
+--------------------------------------------------
+2026-03-25T06:17:21.283Z: User updated successfully
+DATA: {
+  "userId": "69c37dcf0d623415297e776f",
+  "profilePicture": "uploads/profilePicture-1774419441269-586918790.jpg"
+}
+--------------------------------------------------
+2026-03-25T06:20:58.974Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Dhruval Gondaliya",
+    "phone": "9999999999",
+    "isProfileCompletion": "true"
+  },
+  "user": {
+    "id": "69c37ea00d623415297e7797",
+    "iat": 1774419616,
+    "exp": 1775024416
+  }
+}
+--------------------------------------------------
+2026-03-25T06:20:58.975Z: Updating user with data
+DATA: {
+  "name": "Dhruval Gondaliya",
+  "phone": "9999999999"
+}
+--------------------------------------------------
+2026-03-25T06:20:58.979Z: User updated successfully
+DATA: {
+  "userId": "69c37ea00d623415297e7797",
+  "profilePicture": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQlFTNGp0ZXhJZTROQnhOMGZZbU1DZGdFSlkifQ"
+}
+--------------------------------------------------
+2026-03-25T07:00:55.456Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Dhruval Gondaliya",
+    "phone": "9999999999",
+    "isProfileCompletion": "true"
+  },
+  "user": {
+    "id": "69c3881e0d623415297e78f3",
+    "iat": 1774422046,
+    "exp": 1775026846
+  }
+}
+--------------------------------------------------
+2026-03-25T07:00:55.456Z: Updating user with data
+DATA: {
+  "name": "Dhruval Gondaliya",
+  "phone": "9999999999"
+}
+--------------------------------------------------
+2026-03-25T07:00:55.461Z: User updated successfully
+DATA: {
+  "userId": "69c3881e0d623415297e78f3",
+  "profilePicture": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQlFYMDJWY1o1bndHSXVTaGkxdFhPRVRKdVYifQ"
+}
+--------------------------------------------------
+2026-03-25T07:29:18.190Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Dhruval Gondaliya",
+    "phone": "9898899999",
+    "isProfileCompletion": "true"
+  },
+  "user": {
+    "id": "69c38ec4bc4b8c449d387ab2",
+    "iat": 1774423748,
+    "exp": 1775028548
+  }
+}
+--------------------------------------------------
+2026-03-25T07:29:18.191Z: Updating user with data
+DATA: {
+  "name": "Dhruval Gondaliya",
+  "phone": "9898899999"
+}
+--------------------------------------------------
+2026-03-25T07:29:18.199Z: User updated successfully
+DATA: {
+  "userId": "69c38ec4bc4b8c449d387ab2",
+  "profilePicture": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQlFhUnhlNHJnU2hXWThUY2RmT2J5ZTZobGYifQ"
+}
+--------------------------------------------------
+2026-03-25T09:02:43.237Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Dhruval Gondaliya",
+    "phone": "9998743453",
+    "isProfileCompletion": "true"
+  },
+  "user": {
+    "id": "69c3a48ebc4b8c449d387bc9",
+    "iat": 1774429326,
+    "exp": 1775034126
+  }
+}
+--------------------------------------------------
+2026-03-25T09:02:43.238Z: Updating user with data
+DATA: {
+  "name": "Dhruval Gondaliya",
+  "phone": "9998743453"
+}
+--------------------------------------------------
+2026-03-25T09:02:43.245Z: User updated successfully
+DATA: {
+  "userId": "69c3a48ebc4b8c449d387bc9",
+  "profilePicture": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQlFsa2hkNW5UWDdMOUwzek13UGJROVJTR3oifQ"
+}
+--------------------------------------------------
+2026-03-25T09:21:59.000Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "dhruval gondaliya",
+    "phone": "",
+    "isProfileCompletion": "true"
+  },
+  "user": {
+    "id": "69c3a933f6bbcf434b2dd102",
+    "iat": 1774430515,
+    "exp": 1775035315
+  }
+}
+--------------------------------------------------
+2026-03-25T09:21:59.001Z: Updating user with data
+DATA: {
+  "name": "dhruval gondaliya",
+  "phone": ""
+}
+--------------------------------------------------
+2026-03-25T09:21:59.015Z: User updated successfully
+DATA: {
+  "userId": "69c3a933f6bbcf434b2dd102",
+  "profilePicture": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQlFvQUtGNVhEZ0dPSVpxMDJCRDV6b2NsZ1UifQ"
+}
+--------------------------------------------------
+2026-03-25T09:28:13.168Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Dhruval Gondaliya",
+    "phone": "9986284129",
+    "isProfileCompletion": "true"
+  },
+  "user": {
+    "id": "69c3aaa17164e077ea867c97",
+    "iat": 1774430881,
+    "exp": 1775035681
+  }
+}
+--------------------------------------------------
+2026-03-25T09:28:13.169Z: Updating user with data
+DATA: {
+  "name": "Dhruval Gondaliya",
+  "phone": "9986284129"
+}
+--------------------------------------------------
+2026-03-25T09:28:13.188Z: User updated successfully
+DATA: {
+  "userId": "69c3aaa17164e077ea867c97",
+  "profilePicture": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQlFvdTVqWmxMRFl4V2cwUzh6MFdIWG5CZEUifQ"
+}
+--------------------------------------------------
+2026-03-25T09:36:10.340Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Bruce Wayne",
+    "phone": "8889842342",
+    "isProfileCompletion": "true"
+  },
+  "user": {
+    "id": "69c3ac7d7164e077ea867cc0",
+    "iat": 1774431357,
+    "exp": 1775036157
+  }
+}
+--------------------------------------------------
+2026-03-25T09:36:10.360Z: Updating user with data
+DATA: {
+  "name": "Bruce Wayne",
+  "phone": "8889842342"
+}
+--------------------------------------------------
+2026-03-25T09:36:10.367Z: User updated successfully
+DATA: {
+  "userId": "69c3ac7d7164e077ea867cc0",
+  "profilePicture": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzNBcTZtdVA3VG5HQm92bjJLUnpoVzNEazhVeSJ9"
+}
+--------------------------------------------------
+2026-03-25T09:41:12.047Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Thomas",
+    "phone": "9999456782",
+    "isProfileCompletion": "true"
+  },
+  "user": {
+    "id": "69c3ad967164e077ea867cdf",
+    "iat": 1774431638,
+    "exp": 1775036438
+  }
+}
+--------------------------------------------------
+2026-03-25T09:41:12.048Z: Updating user with data
+DATA: {
+  "name": "Thomas",
+  "phone": "9999456782"
+}
+--------------------------------------------------
+2026-03-25T09:41:12.055Z: User updated successfully
+DATA: {
+  "userId": "69c3ad967164e077ea867cdf",
+  "profilePicture": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQWp1ODk1cWJhdUZTcEc1bEljbTh3Rlk2cmoifQ"
+}
+--------------------------------------------------
+2026-03-25T09:45:24.285Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Thomas",
+    "phone": "7409252323",
+    "isProfileCompletion": "true"
+  },
+  "file": {
+    "fieldname": "profilePicture",
+    "originalname": "profile.jpg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "uploads/",
+    "filename": "profilePicture-1774431924213-791022947.jpg",
+    "path": "uploads\\profilePicture-1774431924213-791022947.jpg",
+    "size": 32843
+  },
+  "user": {
+    "id": "69c3ae61b4c6c88885b84e44",
+    "iat": 1774431841,
+    "exp": 1775036641
+  }
+}
+--------------------------------------------------
+2026-03-25T09:45:24.286Z: Updating user with data
+DATA: {
+  "name": "Thomas",
+  "phone": "7409252323",
+  "profilePicture": "uploads/profilePicture-1774431924213-791022947.jpg"
+}
+--------------------------------------------------
+2026-03-25T09:45:24.303Z: User updated successfully
+DATA: {
+  "userId": "69c3ae61b4c6c88885b84e44",
+  "profilePicture": "uploads/profilePicture-1774431924213-791022947.jpg"
+}
+--------------------------------------------------
+2026-03-30T09:01:28.723Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69ca3be77069b0c93ed890d8",
+  "customerName": "Bruce Wayne",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-03-30T09:01:53.478Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-03-30T09:02:59.574Z: Admin confirmed booking 69ca3be87069b0c93ed890dd. Preparing email to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-03-30T09:03:02.085Z: ✅ Confirmed email successfully sent to gdhruval2003@gmail.com for booking 69ca3be87069b0c93ed890dd
+--------------------------------------------------
+2026-03-30T09:07:03.749Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69ca3d367069b0c93ed8915e",
+  "customerName": "Bruce Wayne",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-03-30T09:07:05.727Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-03-31T10:29:44.801Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69cba217c7310fa958c2934c",
+  "customerName": "Bruce Wayne",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-03-31T10:29:48.246Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-16T04:47:58.468Z: Update profile request received
+DATA: {
+  "body": {
+    "name": "Dhruv savani",
+    "phone": "9876678345",
+    "isProfileCompletion": "true"
+  },
+  "file": {
+    "fieldname": "profilePicture",
+    "originalname": "profile.jpg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "uploads/",
+    "filename": "profilePicture-1776314878428-885748367.jpg",
+    "path": "uploads\\profilePicture-1776314878428-885748367.jpg",
+    "size": 1861405
+  },
+  "user": {
+    "id": "69e069c74ecfc875e3faf222",
+    "iat": 1776314823,
+    "exp": 1776919623
+  }
+}
+--------------------------------------------------
+2026-04-16T04:47:58.474Z: Updating user with data
+DATA: {
+  "name": "Dhruv savani",
+  "phone": "9876678345",
+  "profilePicture": "uploads/profilePicture-1776314878428-885748367.jpg"
+}
+--------------------------------------------------
+2026-04-16T04:47:58.515Z: User updated successfully
+DATA: {
+  "userId": "69e069c74ecfc875e3faf222",
+  "profilePicture": "uploads/profilePicture-1776314878428-885748367.jpg"
+}
+--------------------------------------------------
+2026-04-16T05:47:40.976Z: Attempting to send booking confirmation email to: brucewayne.protocol@gmail.com
+DATA: {
+  "paymentId": "69e077fbf66b1f81da2310e9",
+  "customerName": "krishna",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-16T05:47:59.697Z: ✅ Booking confirmation email successfully sent to brucewayne.protocol@gmail.com
+--------------------------------------------------
+2026-04-16T05:53:43.847Z: Admin confirmed booking 69e077fcf66b1f81da2310ee. Preparing email to brucewayne.protocol@gmail.com
+--------------------------------------------------
+2026-04-16T05:53:46.068Z: ✅ Confirmed email successfully sent to brucewayne.protocol@gmail.com for booking 69e077fcf66b1f81da2310ee
+--------------------------------------------------
+2026-04-29T08:18:27.051Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1bed1870c22cf712d7d16",
+  "customerName": "Bruce Wayne",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T08:18:30.649Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T08:29:05.375Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1c14f1d9e3455e63feb22",
+  "customerName": "Bruce Wayne",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T08:29:29.620Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T08:52:09.484Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1c6b71d9e3455e63feba7",
+  "customerName": "Spiderman",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T08:52:12.945Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T08:57:55.626Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1c812846a0d5dad5a431f",
+  "customerName": "Spiderman",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T08:58:21.637Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T09:11:06.928Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1cb29846a0d5dad5a4393",
+  "customerName": "Verification code",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T09:11:31.648Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T09:22:07.205Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1cdbd382d1618b7d56c22",
+  "customerName": "Bruce Wayne",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T09:22:10.959Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T09:36:42.550Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1d128382d1618b7d56ce5",
+  "customerName": "Dhruval Gondaliya",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T09:37:07.806Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T09:44:41.993Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1d308382d1618b7d56d27",
+  "customerName": "Dhruval Gondaliya",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T09:44:44.752Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T11:38:25.043Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1edaf382d1618b7d5729a",
+  "customerName": "Verification code",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T11:38:28.487Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T11:45:25.005Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1ef53382d1618b7d57332",
+  "customerName": "sad",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T11:45:27.379Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T12:05:26.047Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1f4046ea3cb1227bc1fc2",
+  "customerName": "ads",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T12:05:30.676Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-04-29T12:17:41.047Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f1f6e3e998d8ebb0a35df8",
+  "customerName": "Spiderman",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-04-29T12:18:21.332Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------
+2026-05-04T05:17:51.332Z: Attempting to send booking confirmation email to: dhruv29fake@gmail.com
+DATA: {
+  "paymentId": "69f82bfd94b454989bb3c524",
+  "customerName": "sdgds",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-05-04T05:17:55.348Z: ✅ Booking confirmation email successfully sent to dhruv29fake@gmail.com
+--------------------------------------------------
+2026-05-04T06:22:48.346Z: Attempting to send booking confirmation email to: gdhruval2003@gmail.com
+DATA: {
+  "paymentId": "69f83b3694b454989bb3c640",
+  "customerName": "Dhruval Gondaliya",
+  "bookingCount": 1
+}
+--------------------------------------------------
+2026-05-04T06:22:52.202Z: ✅ Booking confirmation email successfully sent to gdhruval2003@gmail.com
+--------------------------------------------------

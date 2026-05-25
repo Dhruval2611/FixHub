@@ -1,0 +1,445 @@
+/* Add/append at the end of your AccountSettings.css */
+.upgrade-plan-btn {
+  background: #111827;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: auto; /* Changed from 100% to auto for better look */
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.upgrade-plan-btn:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.upgrade-plan-btn:active {
+  transform: translateY(0);
+}
+/* AccountSettings.css - Professional Split-View Layout */
+
+.account-settings {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #F9FAFB;
+  padding: 140px 20px 60px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.account-layout {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  gap: 32px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+@media (max-width: 900px) {
+  .account-layout {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 2vw;
+  }
+  .account-sidebar {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 16px;
+    border-radius: 12px;
+  }
+  .account-main {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .account-layout {
+    padding: 0 1vw;
+  }
+  .account-sidebar {
+    width: 100%;
+    min-width: 0;
+    border-radius: 0;
+  }
+  .account-main {
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .account-layout {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 2vw;
+  }
+  .account-sidebar {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .account-layout {
+    padding: 0 1vw;
+  }
+  .account-sidebar {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Sidebar Styling */
+.account-sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.user-mini-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.mini-avatar {
+  width: 48px;
+  height: 48px;
+  background: #111827;
+  color: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.mini-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.mini-info p {
+  font-size: 0.85rem;
+  color: #6B7280;
+  margin: 0;
+}
+
+.settings-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-item {
+  text-align: left;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  border-left: 3px solid transparent;
+  color: #6B7280;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 0 4px 4px 0;
+}
+
+.nav-item:hover {
+  background: #F3F4F6;
+  color: #111827;
+}
+
+.nav-item.active {
+  background: #FFFFFF;
+  color: #111827;
+  border-left-color: #111827;
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Content Area Styling */
+.account-content {
+  flex: 1;
+  min-width: 0;
+  /* Prevent flex overflow */
+}
+
+.content-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 32px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.content-card h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E5E7EB;
+  letter-spacing: -0.02em;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Standardized Input */
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #111827;
+  background: #FFFFFF;
+  transition: all 0.2s ease;
+  height: 42px;
+  font-family: inherit;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #111827;
+  box-shadow: 0 0 0 1px #111827;
+}
+
+.form-group input:disabled {
+  background-color: #F3F4F6;
+  color: #9CA3AF;
+  cursor: not-allowed;
+  border-color: #E5E7EB;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+.checkbox-label:hover {
+  color: #111827;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #111827;
+  border-radius: 4px;
+}
+
+/* Button - Strict Override */
+.account-settings .btn-primary {
+  width: auto;
+  align-self: flex-start;
+  padding: 10px 24px;
+  background: #111827 !important;
+  color: #FFFFFF !important;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  height: 40px;
+}
+
+/* Disable App.css shine effect */
+.account-settings .btn-primary::before {
+  display: none !important;
+  content: none !important;
+}
+
+.account-settings .btn-primary:hover {
+  background: #374151 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom File Input Styling */
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+.file-input-label {
+  padding: 8px 16px;
+  background: #FFFFFF;
+  color: #374151;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+}
+
+.file-input-label:hover {
+  border-color: #111827;
+  color: #111827;
+  background: #F9FAFB;
+}
+
+.file-name {
+  font-size: 0.85rem;
+  color: #6B7280;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 36px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #9CA3AF;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 1rem;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-toggle:hover {
+  color: #4B5563;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .account-settings {
+    padding: 100px 20px 40px;
+  }
+
+  .account-layout {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .account-sidebar {
+    width: 100%;
+  }
+
+  .settings-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .nav-item {
+    white-space: nowrap;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 4px 4px 0 0;
+    justify-content: center;
+  }
+
+  .nav-item.active {
+    border-left: none;
+    border-bottom-color: #111827;
+  }
+
+  .account-content {
+    width: 100%;
+  }
+
+  .content-card {
+    padding: 20px;
+  }
+
+  .account-settings .btn-primary {
+    width: 100%;
+  }
+}
+
+/* Spinner Loading */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

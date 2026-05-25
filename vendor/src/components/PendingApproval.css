@@ -1,0 +1,127 @@
+.pending-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e8e5e0 100%);
+  padding: 40px 24px;
+}
+
+.pending-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(45, 36, 36, 0.08);
+  border: 1px solid #E5E7EB;
+}
+
+.pending-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.pending-status-icon {
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pending-card h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.pending-card > p {
+  color: #6B7280;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.pending-info-box {
+  background: #FAFAFA;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.pending-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.pending-info-row + .pending-info-row {
+  border-top: 1px solid #F3F4F6;
+}
+
+.pending-info-label {
+  font-size: 0.82rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.pending-info-value {
+  font-size: 0.88rem;
+  color: #111827;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.pending-status-badge {
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.pending-status-badge.pending { background: #FEF3C7; color: #B45309; }
+.pending-status-badge.rejected { background: #FEE2E2; color: #DC2626; }
+.pending-status-badge.approved { background: #D1FAE5; color: #065F46; }
+
+.pending-note {
+  font-size: 0.8rem;
+  color: #9CA3AF;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.pending-logout-btn {
+  padding: 10px 24px;
+  background: #F3F4F6;
+  color: #374151;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pending-logout-btn:hover {
+  background: #E5E7EB;
+}
+
+@media (max-width: 480px) {
+  .pending-card {
+    padding: 32px 24px;
+  }
+
+  .pending-card h1 {
+    font-size: 1.25rem;
+  }
+}

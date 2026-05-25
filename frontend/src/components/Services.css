@@ -1,0 +1,652 @@
+/* Services.css - Professional Flat Theme */
+
+/* Full Page Layout */
+.full-services-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 24px 60px;
+    /* More compact */
+    position: relative;
+    z-index: 1;
+}
+
+/* Header & Filters */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 24px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #4B5563;
+    margin-top: 12px;
+    font-weight: 400;
+    max-width: 500px;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.search-shelf {
+    display: flex;
+    align-items: center;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0 16px;
+    height: 42px;
+    width: 240px;
+    transition: all 0.2s ease;
+}
+
+.search-shelf:focus-within {
+    border-color: #111827;
+    background: #ffffff;
+    box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.05);
+}
+
+.search-shelf-icon {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    margin-right: 10px;
+}
+
+.search-shelf input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    color: #111827;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.search-shelf input::placeholder {
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+/* Category Dropdown */
+.filter-dropdown-wrap {
+    position: relative;
+}
+
+.filter-dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    height: 42px;
+    padding: 0 36px 0 14px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #111827;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    min-width: 160px;
+}
+
+.filter-dropdown:hover {
+    border-color: #d1d5db;
+    background-color: #f3f4f6;
+}
+
+.filter-dropdown:focus {
+    outline: none;
+    border-color: #111827;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.05);
+}
+
+/* Discount Banner - Professional & Compact */
+.discount-banner {
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.discount-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.discount-badge-large {
+    background: #111827;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.discount-text {
+    color: #374151;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+/* Price Display Redesign - Professional Stacked Layout */
+.price-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.original-price {
+    font-size: 0.75rem;
+    color: #9CA3AF;
+    text-decoration: line-through;
+    font-weight: 500;
+    margin-bottom: -2px;
+}
+
+.discounted-price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -0.015em;
+}
+
+.discount-tag-modern {
+    background: #F0FDF4;
+    color: #166534;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Grid Layout */
+.services-full-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+/* Professional Cards - Premium Clean Theme */
+.premium-service-card {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    /* Standard Gray Border */
+    border-radius: 8px;
+    padding: 32px;
+    /* Standard padding */
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    height: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.premium-service-card:hover {
+    border-color: #D1D5DB;
+    transform: translateY(-2px);
+    /* Subtle lift */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.icon-badge {
+    font-size: 1.1rem;
+    background: #f3f4f6;
+    color: #374151;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.premium-service-card:hover .icon-badge {
+    background: #111827;
+    color: #ffffff;
+    border-color: #111827;
+}
+
+.category-tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6B7280;
+    letter-spacing: 0.5px;
+    background: #F3F4F6;
+    padding: 4px 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    height: fit-content;
+}
+
+.card-body h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111827;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.card-body p {
+    color: #6B7280;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.card-bottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    border-top: 1px solid #F3F4F6;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+}
+
+.add-to-cart-minimal {
+    background: #f9fafb;
+    color: #111827;
+    border: 1px solid #d1d5db;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    flex-shrink: 0;
+}
+
+.add-to-cart-minimal:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+.full-page-loader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #000000;
+    background: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Pagination Styles */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.pagination-btn {
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    color: #374151;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: #F3F4F6;
+    border-color: #9CA3AF;
+    color: #111827;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #F9FAFB;
+}
+
+.pagination-numbers {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination-number {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #4B5563;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination-number:hover {
+    background: #F3F4F6;
+    color: #111827;
+}
+
+.pagination-number.active {
+    background: #111827;
+    color: #FFFFFF;
+    border-color: #111827;
+}
+
+/* ── Responsiveness ── */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .text-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-controls {
+        width: 100%;
+    }
+
+    .search-shelf {
+        flex: 1;
+        width: auto;
+        max-width: 400px;
+    }
+
+    .services-full-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 16px;
+    }
+
+    .premium-service-card {
+        padding: 24px;
+    }
+}
+
+/* Small tablet / large phone */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 110px 16px 40px;
+    }
+
+    .main-header {
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+        gap: 14px;
+    }
+
+    .text-content h1 {
+        font-size: 1.75rem;
+        letter-spacing: -0.5px;
+    }
+
+    .text-content p {
+        font-size: 0.88rem;
+        margin-top: 6px;
+    }
+
+    .services-full-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .premium-service-card {
+        padding: 20px;
+    }
+
+    .card-top {
+        margin-bottom: 16px;
+    }
+
+    .icon-badge {
+        width: 40px;
+        height: 40px;
+        font-size: 0.95rem;
+        border-radius: 8px;
+    }
+
+    .category-tag {
+        font-size: 0.62rem;
+        padding: 3px 8px;
+    }
+
+    .card-body h3 {
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+    }
+
+    .card-body p {
+        font-size: 0.85rem;
+        margin-bottom: 14px;
+        line-height: 1.5;
+    }
+
+    .card-bottom {
+        padding-top: 14px;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .add-to-cart-minimal {
+        width: 36px;
+        height: 36px;
+        font-size: 0.8rem;
+    }
+
+    .shelf-btn {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+    .content-container {
+        padding: 90px 12px 32px;
+    }
+
+    .full-services-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .main-header {
+        margin-bottom: 18px;
+        padding-bottom: 14px;
+        gap: 12px;
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 0.82rem;
+        margin-top: 4px;
+        max-width: 100%;
+    }
+
+    /* Compact horizontal card layout on mobile */
+    .premium-service-card {
+        padding: 16px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0;
+    }
+
+    .premium-service-card:hover {
+        transform: none;
+    }
+
+    .card-top {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .icon-badge {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+
+    .category-tag {
+        font-size: 0.58rem;
+        padding: 2px 6px;
+        margin-left: auto;
+    }
+
+    .card-body {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .card-body h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .card-body p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        line-height: 1.45;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .card-bottom {
+        width: 100%;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .add-to-cart-minimal {
+        width: 34px;
+        height: 34px;
+        font-size: 0.75rem;
+        border-radius: 6px;
+    }
+}
+
+/* Small phone */
+@media (max-width: 380px) {
+    .content-container {
+        padding: 80px 10px 24px;
+    }
+
+    .text-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .shelf-btn {
+        padding: 5px 10px;
+        font-size: 0.72rem;
+        gap: 5px;
+    }
+
+    .premium-service-card {
+        padding: 14px;
+    }
+
+    .card-body h3 {
+        font-size: 0.95rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,323 @@
+.vendor-requests {
+  padding: 32px;
+  max-width: 900px;
+}
+
+.vr-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 16px;
+}
+
+.vr-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #E5E7EB;
+  border-top-color: #111827;
+  border-radius: 50%;
+  animation: vr-spin 0.7s linear infinite;
+}
+
+@keyframes vr-spin {
+  to { transform: rotate(360deg); }
+}
+
+.vr-loading p {
+  color: #6B7280;
+  font-size: 0.9rem;
+}
+
+.vr-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.vr-header h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.vr-header p {
+  color: #6B7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.vr-count-badge {
+  background: #F0FDF4;
+  color: #15803D;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid #BBF7D0;
+}
+
+.vr-empty {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+}
+
+.vr-empty-icon {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: #9CA3AF;
+}
+
+.vr-empty h3 {
+  font-size: 1.15rem;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.vr-empty p {
+  color: #6B7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.vr-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vr-card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.2s;
+  animation: vr-slideIn 0.3s ease;
+}
+
+@keyframes vr-slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vr-card:hover {
+  border-color: #D1D5DB;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.vr-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #FAFAFA;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.vr-service-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.vr-service-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2D2424, #5C4B4B);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F5E871;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.vr-price {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #2D2424;
+}
+
+.vr-card-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vr-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #374151;
+}
+
+.vr-detail-icon {
+  color: #9CA3AF;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.vr-detail-row {
+  display: flex;
+  gap: 24px;
+}
+
+.vr-card-actions {
+  display: flex;
+  gap: 10px;
+  padding: 12px 20px 16px;
+}
+
+.vr-accept-btn {
+  flex: 1;
+  padding: 10px 20px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.vr-accept-btn:hover:not(:disabled) {
+  background: #1F2937;
+  transform: translateY(-1px);
+}
+
+.vr-accept-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.vr-reject-btn {
+  padding: 10px 20px;
+  background: #fff;
+  color: #EF4444;
+  border: 1px solid #FCA5A5;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.vr-reject-btn:hover:not(:disabled) {
+  background: #FEF2F2;
+}
+
+.vr-reject-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.vr-btn-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: vr-spin 0.7s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .vendor-requests {
+    padding: 20px 16px 100px;
+  }
+
+  .vr-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .vr-detail-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ── Countdown Timer ── */
+.vr-timer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: #F0FDF4;
+  border-bottom: 1px solid #BBF7D0;
+}
+
+.vr-timer--urgent {
+  background: #FEF2F2;
+  border-bottom-color: #FECACA;
+}
+
+.vr-timer-bar {
+  flex: 1;
+  height: 4px;
+  background: #E5E7EB;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.vr-timer-fill {
+  height: 100%;
+  background: #22C55E;
+  border-radius: 2px;
+  transition: width 1s linear;
+}
+
+.vr-timer--urgent .vr-timer-fill {
+  background: #EF4444;
+}
+
+.vr-timer-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #15803D;
+  white-space: nowrap;
+  min-width: 52px;
+  font-variant-numeric: tabular-nums;
+}
+
+.vr-timer--urgent .vr-timer-text {
+  color: #DC2626;
+  animation: vr-pulse 1s ease-in-out infinite;
+}
+
+@keyframes vr-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

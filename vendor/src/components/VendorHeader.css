@@ -1,0 +1,165 @@
+.vendor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 64px;
+  background: #fff;
+  border-bottom: 1px solid #E5E7EB;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.vendor-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.vendor-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vh-logo-icon {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  color: #2D2424;
+}
+
+.vh-logo-text {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2D2424;
+  letter-spacing: -0.02em;
+}
+
+.vh-logo-badge {
+  background: linear-gradient(135deg, #2D2424, #5C4B4B);
+  color: #F5E871;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.vendor-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.vh-notification-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #F3F4F6;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #6B7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vh-notification-btn:hover {
+  background: #E5E7EB;
+  color: #111827;
+}
+
+.vh-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.vh-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2D2424, #5C4B4B);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.vh-avatar span {
+  color: #F5E871;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.vh-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vh-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.vh-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.vh-business {
+  font-size: 0.72rem;
+  color: #9CA3AF;
+  line-height: 1.2;
+}
+
+.vh-logout-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #FEF2F2;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #EF4444;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vh-logout-btn:hover {
+  background: #FEE2E2;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .vendor-header {
+    padding: 0 16px;
+  }
+
+  .vh-profile-info {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .vh-logo-text {
+    font-size: 1.1rem;
+  }
+
+  .vh-logo-badge {
+    display: none;
+  }
+}

@@ -1,0 +1,461 @@
+/* ── YourBookings — expandable-card design ── */
+
+.yb-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 150px 24px 80px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.yb-header {
+  max-width: 720px;
+  margin: 0 auto 32px;
+}
+.yb-header h1 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.03em;
+  margin: 0 0 4px;
+}
+.yb-header p {
+  font-size: 0.88rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Loading */
+.yb-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 80px 20px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+.yb-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #111827;
+  border-radius: 50%;
+  animation: ybSpin .7s linear infinite;
+}
+@keyframes ybSpin { to { transform: rotate(360deg); } }
+
+/* Empty */
+.yb-empty-shell {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.yb-empty {
+  margin-top: 40px;
+  max-width: 640px;
+  width: 100%;
+  padding: 48px 32px;
+  border-radius: 12px;
+  border: 1px dashed #e5e7eb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+}
+.yb-empty-icon {
+  font-size: 3rem;
+  color: #d1d5db;
+  margin-bottom: 20px;
+}
+.yb-empty h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.03em;
+}
+.yb-empty p {
+  margin: 0 0 24px 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+.yb-browse-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s;
+}
+.yb-browse-btn:hover { background: #1f2937; }
+
+/* List */
+.yb-list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Card */
+.yb-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color .2s, box-shadow .2s;
+}
+.yb-card:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.yb-card-open {
+  border-color: #111827;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+}
+
+/* Summary row */
+.yb-summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 12px;
+}
+
+.yb-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+}
+
+.yb-svc-icon {
+  width: 40px;
+  height: 40px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  transition: background .2s;
+}
+.yb-card-open .yb-svc-icon,
+.yb-card:hover .yb-svc-icon {
+  background: #111827;
+  color: #fff;
+}
+
+.yb-svc-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.yb-svc-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.yb-svc-sub {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.yb-summary-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Status pill */
+.yb-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border-radius: 20px;
+  border: 1.5px solid;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.yb-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Chevron */
+.yb-chevron {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  transition: transform .25s, color .2s;
+}
+.yb-chevron-open {
+  transform: rotate(180deg);
+  color: #111827;
+}
+
+/* Expand panel */
+.yb-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s cubic-bezier(.4,0,.2,1);
+}
+.yb-panel-open {
+  max-height: 900px;
+}
+
+.yb-panel-inner {
+  border-top: 1px solid #f3f4f6;
+  padding: 18px 20px 0;
+  animation: ybFadeIn .25s ease;
+}
+@keyframes ybFadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+/* Detail grid */
+.yb-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.yb-detail-full {
+  grid-column: 1 / -1;
+}
+
+.yb-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.yb-detail-icon {
+  width: 28px;
+  height: 28px;
+  background: #f9fafb;
+  border: 1px solid #f3f4f6;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.yb-detail-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.yb-detail-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #9ca3af;
+  font-weight: 700;
+}
+.yb-detail-val {
+  font-size: 0.88rem;
+  color: #111827;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+/* Vendor info section (after user accepted) */
+.yb-vendor-info {
+  margin-top: 12px;
+  padding: 14px 16px;
+  background: #FAFAF8;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+}
+
+.yb-vendor-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #2D2424;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.yb-vendor-icon {
+  font-size: 0.85rem;
+  color: #2D2424;
+}
+
+.yb-vendor-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.yb-vendor-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.yb-vendor-business {
+  font-size: 0.82rem;
+  color: #6B7280;
+}
+
+.yb-vendor-phone {
+  font-size: 0.82rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Feedback display */
+.yb-feedback-display {
+  margin-top: 12px;
+  padding: 14px 16px;
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  border-radius: 10px;
+}
+
+.yb-feedback-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.yb-fb-star {
+  font-size: 0.9rem;
+  color: #D1D5DB;
+}
+
+.yb-fb-star.active {
+  color: #F59E0B;
+}
+
+.yb-fb-rating-text {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #111827;
+  margin-left: 6px;
+}
+
+.yb-fb-review {
+  font-size: 0.85rem;
+  color: #374151;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Panel footer */
+.yb-panel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0 18px;
+  border-top: 1px solid #f3f4f6;
+  margin-top: 4px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.yb-booked-on {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.yb-footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Feedback button */
+.yb-feedback-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 18px;
+  background: #FFFBEB;
+  color: #B45309;
+  border: 1px solid #FDE68A;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.yb-feedback-btn:hover {
+  background: #FEF3C7;
+  transform: translateY(-1px);
+}
+
+/* Receipt button */
+.yb-receipt-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 18px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: background .2s, transform .15s;
+}
+.yb-receipt-btn:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+.yb-receipt-btn:active { transform: translateY(0); }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .yb-page { padding: 80px 14px 40px; }
+  .yb-detail-grid { grid-template-columns: 1fr; }
+  .yb-detail-full { grid-column: 1; }
+  .yb-summary { padding: 14px 16px; }
+  .yb-panel-inner { padding: 16px 16px 0; }
+  .yb-footer-actions { flex-direction: column; width: 100%; }
+  .yb-feedback-btn, .yb-receipt-btn { width: 100%; justify-content: center; }
+}
+

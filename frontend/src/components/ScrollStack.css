@@ -1,0 +1,51 @@
+/* ScrollStack.css */
+
+.scroll-stack-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 0;
+    /* Ensure enough scroll space for short last items to reach top */
+}
+
+.scroll-stack-item {
+    position: sticky;
+    top: 110px;
+    /* Increased to clear navbar with breathing room */
+
+    /* Folder/Card Style */
+    width: 95%;
+    /* Margin on sides */
+    margin: 0 auto;
+    border-radius: 40px;
+    /* Curves on all corners */
+
+    /* Ensure covers previous item */
+    min-height: 90vh;
+    /* Reduced slightly from 100vh so it feels like a card */
+    background-color: #fff;
+
+    /* Visuals */
+    will-change: transform;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.08);
+    /* Stronger shadow */
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    /* Subtle border */
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Clip content to rounded corners */
+    margin-bottom: 0 !important;
+}
+
+/* Ensure the last item scrolls away naturally, keeping previous items pinned until it's done */
+.scroll-stack-item:last-child {
+    position: relative !important;
+    top: auto !important;
+    padding-bottom: 0;
+    min-height: 50vh;
+    /* Make sure it's tall enough to fully cover the stack before unpinning */
+    background-color: #fff;
+    /* Ensure it's opaque */
+}

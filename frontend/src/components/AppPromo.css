@@ -1,0 +1,300 @@
+/* APP PROMO - IMPRESSIVE DESIGN */
+.app-promo {
+    background: linear-gradient(135deg, var(--text-primary) 0%, #3d3230 100%);
+    border-radius: var(--radius-xl);
+    padding: 0;
+    margin: 100px auto;
+    display: flex;
+    max-width: 1200px;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    color: var(--bg-primary);
+    box-shadow: 0 30px 60px rgba(45, 36, 36, 0.3);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    .app-promo {
+        flex-direction: column;
+        min-height: 350px;
+        padding: 24px 2vw;
+    }
+    .app-promo-content, .app-promo-image {
+        width: 100%;
+        min-width: 0;
+        padding: 16px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .app-promo {
+        min-height: 220px;
+        padding: 12px 1vw;
+    }
+    .phone-outline {
+        width: 160px;
+        height: 320px;
+        border-radius: 24px;
+        padding: 6px;
+    }
+}
+
+/* Multiple decorative elements */
+.app-promo::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--accent-yellow) 0%, transparent 70%);
+    opacity: 0.2;
+    z-index: 0;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.app-promo::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, var(--accent-blue) 0%, transparent 70%);
+    opacity: 0.15;
+    z-index: 0;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.3;
+    }
+}
+
+.app-content {
+    flex: 1;
+    padding: 80px 70px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app-content h2 {
+    color: var(--accent-yellow);
+    font-size: 4rem;
+    margin-bottom: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 0.95;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.app-content p {
+    color: rgba(253, 246, 233, 0.95);
+    font-size: 1.35rem;
+    margin-bottom: 50px;
+    font-weight: 500;
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.store-btn {
+    background: rgba(253, 246, 233, 0.95);
+    color: var(--text-primary);
+    border: none;
+    padding: 16px 32px;
+    border-radius: var(--radius-lg);
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-family: var(--font-main);
+    position: relative;
+    overflow: hidden;
+}
+
+.store-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(245, 232, 113, 0.4), transparent);
+    transition: left 0.5s;
+}
+
+.store-btn:hover::before {
+    left: 100%;
+}
+
+.store-btn:hover {
+    background: var(--accent-yellow);
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(245, 232, 113, 0.4);
+}
+
+.store-icon {
+    font-size: 2rem;
+}
+
+.store-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.store-text span {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+.store-text strong {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-top: 2px;
+}
+
+/* PHONE MOCKUP - IMPRESSIVE 3D EFFECT */
+.app-mockup {
+    flex: 0 0 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    padding: 40px;
+}
+
+.phone-outline {
+    width: 280px;
+    height: 560px;
+    background: linear-gradient(135deg, #4a4240 0%, var(--text-primary) 100%);
+    border-radius: 40px;
+    padding: 12px;
+    box-shadow:
+        0 50px 100px rgba(0, 0, 0, 0.4),
+        0 0 0 8px rgba(245, 232, 113, 0.1),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotateY(-5deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotateY(5deg);
+    }
+}
+
+/* Phone notch */
+.phone-outline::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 25px;
+    background: var(--text-primary);
+    border-radius: 0 0 20px 20px;
+    z-index: 10;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--accent-yellow) 0%, #f5e871 50%, var(--accent-green) 100%);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated background pattern */
+.phone-screen::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(45deg,
+            transparent,
+            transparent 20px,
+            rgba(255, 255, 255, 0.05) 20px,
+            rgba(255, 255, 255, 0.05) 40px);
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+.mobile-icon {
+    font-size: 5rem;
+    color: var(--text-primary);
+    z-index: 2;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.phone-screen span {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

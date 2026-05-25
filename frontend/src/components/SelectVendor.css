@@ -1,0 +1,388 @@
+/* ============================================================
+   SelectVendor.css — Vendor selection page for multi-vendor flow
+   ============================================================ */
+
+.sv-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+  min-height: 100vh;
+}
+
+.sv-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+.sv-back-btn:hover { color: #0f172a; }
+
+.sv-header {
+  margin-bottom: 28px;
+}
+.sv-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 6px;
+}
+.sv-header p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Booking summary strip */
+.sv-booking-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+.sv-booking-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.sv-booking-meta {
+  flex: 1;
+  min-width: 0;
+}
+.sv-booking-name {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 1rem;
+}
+.sv-booking-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+.sv-booking-details span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Vendor cards */
+.sv-vendor-count {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.sv-vendor-count strong {
+  color: #0f172a;
+}
+
+.sv-vendor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sv-vendor-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.sv-vendor-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.sv-vendor-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.sv-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.sv-vendor-info {
+  flex: 1;
+  min-width: 0;
+}
+.sv-vendor-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #0f172a;
+  margin: 0 0 2px;
+}
+.sv-vendor-business {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.sv-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.sv-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #059669;
+  background: #ecfdf5;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.sv-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #d97706;
+}
+.sv-rating svg { font-size: 0.8rem; }
+.sv-review-count {
+  font-weight: 400;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+
+.sv-vendor-phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 10px;
+}
+.sv-vendor-phone svg { color: #94a3b8; }
+
+.sv-certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.sv-cert-pill {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.sv-vendor-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 14px;
+}
+.sv-accepted-time {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.sv-select-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.sv-select-btn:hover:not(:disabled) {
+  background: #1e293b;
+  box-shadow: 0 2px 8px rgba(15,23,42,0.2);
+}
+.sv-select-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Confirmation modal */
+.sv-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: svFadeIn 0.2s ease;
+}
+@keyframes svFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.sv-modal {
+  background: #fff;
+  border-radius: 14px;
+  max-width: 420px;
+  width: 100%;
+  padding: 28px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  animation: svSlideUp 0.25s ease;
+}
+@keyframes svSlideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.sv-modal h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px;
+}
+.sv-modal p {
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+.sv-modal-vendor {
+  font-weight: 600;
+  color: #0f172a;
+}
+.sv-modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.sv-modal-cancel {
+  padding: 10px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.sv-modal-cancel:hover { background: #f8fafc; }
+.sv-modal-confirm {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #059669;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.sv-modal-confirm:hover:not(:disabled) { background: #047857; }
+.sv-modal-confirm:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Spinner */
+.sv-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: svSpin 0.6s linear infinite;
+  display: inline-block;
+}
+@keyframes svSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* Loading state */
+.sv-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  gap: 16px;
+  color: #64748b;
+}
+.sv-loading .sv-spinner {
+  width: 32px;
+  height: 32px;
+  border-color: #e2e8f0;
+  border-top-color: #0f172a;
+}
+
+/* Empty state */
+.sv-empty {
+  text-align: center;
+  padding: 48px 20px;
+  color: #94a3b8;
+}
+.sv-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  display: block;
+}
+.sv-empty h3 {
+  font-size: 1.1rem;
+  color: #475569;
+  margin: 0 0 6px;
+}
+.sv-empty p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .sv-page { padding: 20px 16px 40px; }
+  .sv-header h1 { font-size: 1.3rem; }
+  .sv-booking-summary { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .sv-vendor-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
+  .sv-select-btn { width: 100%; justify-content: center; }
+}
